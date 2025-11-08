@@ -1,4 +1,4 @@
-main{
+.main{
     font-size: 18px; 
     font-family: "Hanken Grotesk", sans-serif;
 }
@@ -26,21 +26,34 @@ main{
 }
 .score{
     text-align: center;
-    font-size:50px;
+    font-size: 50px;
  }
  span{
      color:  hsla(224, 22%, 76%, 1);
      font-size: 18px;
  }
+ .percent {
+    color:  hsla(224, 22%, 76%, 1);
+    margin-top: -20px;
+ }
 .stat{
     color:  hsla(224, 22%, 76%, 1);
+    margin-top: -20px;
 }
-
+.summary{
+    padding: 20px;
+}
 .summary > div{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
+    color: hsl(224, 30%, 27%) ;
+}
+ .sum{
+    font-size: 22px;
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
 }
 .reaction{
     min-width: fit-content;
@@ -60,9 +73,9 @@ main{
 .vis{
     color: hsl(234, 85%, 45%);
 }
-.summary > div > div{
+#imgP{
     display: flex;
-
+    justify-content: space-between;
 }
 .memory{
     min-width: fit-content;
@@ -85,7 +98,7 @@ main{
 #btnLike{
     display: block;
     background-color: hsl(224, 30%, 27%);
-    width: 200px;
+    min-width: fit-content;
     height: 50px;
     color:  hsla(234, 66%, 95%, 1);
     margin: 0 auto;
@@ -94,4 +107,44 @@ main{
 h3{
     text-align: center;
     padding-top: 12px;
+}
+
+@media (max-width: 899px){
+   body{
+        margin: 0;
+    }
+    .results{
+     border-bottom-left-radius: 30px;
+     border-bottom-right-radius: 30px;
+     max-height: fit-content;
+     padding: 20px;
+    }
+    .stat{
+        width: 100%;
+        margin-top: -10px;
+    }
+}
+
+@media (min-width: 900px) {
+    body{
+        background-color: hsla(224, 100%, 96%, 1);
+        margin: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .main{
+        display: flex;
+        background-color: hsl(0, 0%, 100%);
+        max-height: fit-content;
+        border-radius: 30px;
+    }
+    .results{
+        border-radius: 30px;
+        width: 250px;
+        padding: 15px;
+        height: 400px;
+    }
+    .summary{
+        width: 250px;
+    }
 }
