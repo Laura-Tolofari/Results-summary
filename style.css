@@ -109,7 +109,7 @@ h3{
     padding-top: 12px;
 }
 
-@media (max-width: 899px){
+@media (min-width: 320px) and (max-width:899px){
    body{
         margin: 0;
     }
